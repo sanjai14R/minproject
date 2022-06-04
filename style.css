@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;1,700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font: 'Montserrat', sans-serif;
+    --y:#F2D921;
+    --w : #FFFFFF;
+    --b : #15B0E8;
+    --bb: #2C2626;
+}
+html,body{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+
+/* nav  */
+
+nav{
+    position: absolute;
+    z-index: 999;
+    width: 99vw;
+    display: flex;
+    opacity: .85;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color:#111;
+    color: #FFFFFF;
+    font-family: var(--font);
+    font-weight: 400;
+}
+nav span{
+    color: var(--y);
+}
+li{
+    list-style: none;
+    display: inline-block;
+    padding:10px 30px;
+    font-weight: 600;
+}
+body{
+    overflow-x: hidden;
+}
+li a{
+    text-decoration: none;
+    color: var(--w);
+}
+li a:hover{
+    color: var(--y);
+}
+#d{
+    border: 2px solid var(--y);
+    padding:10px 30px;
+    transition: all .2s linear;
+}
+#d:hover,#d a:hover{
+    background-color: #F2D921;
+    color: #111;
+    font-weight: 700;
+}
+.op{
+    color: var(--y);
+}
+.op:hover{
+    color: var(--w);
+}
+
+/* side nav  */
+
+#side{
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    top: 20rem;
+    right: 0;
+    background-color: var(--y);     
+    padding: 20px 5px;
+}
+#side a{
+    padding: 10px 0px;
+    transform: scale(1);
+    transition: all .2s linear;
+}
+#side a:hover{
+    transform: scale(1.3);
+}
+
+/* header  */
+
+header{
+    font-family: var(--font);
+    font-weight: 700;
+}
+header img{
+        position: relative;
+        background-size: cover;
+        object-fit: cover;
+        height: 100vh;
+        width: 99vw;
+}
+#hl1{
+    position: absolute;
+    color: var(--w);
+    top: 20rem;
+    font-size: 1.8rem;
+    word-spacing: 10px;
+    left:5rem;
+}
+.hh span{
+    color: transparent;
+    font-size: 4rem;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--y);
+}
+
+
+#sh span{
+    background-color: var(--y);
+    font-weight: 700;
+    color: #111;
+    font-size: 1.5rem;
+    padding: 5px 40px;
+  
+}
+#sh{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    width: 28rem;
+    font-size: 2rem;
+    margin-top: 3rem;
+
+}
+
+#sh span a{
+    text-decoration: none;
+    color: var(--bb);
+   
+}
+#sh span{
+    transform: scale(1);
+}
+#sh span:hover{
+    transform: scale(1.08);
+    transition: all .3s linear;
+}
+
+/* section 1 */
+
+#s1{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--b);
+    height: 750px;
+}
+
+.s1m{
+   width: 60rem;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   height: 750px;
+   padding: 30px;
+   flex-direction: column;
+   font-family: var(--font);
+}
+.s1mf{
+    font-style: italic;
+}
+
+
+.s1m a{
+        color: #111;
+}
+.s1ml{
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding: 10px 40px;
+    border: 3px solid #111;
+    transform: scale(1);
+    transition: all .3s linear;
+}
+.s1ml:hover{
+    transform: scale(1.08);
+}
+
+.s1mm{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.s1f{
+   width: 30rem;
+   display: flex;
+   padding: 30px;
+   justify-content: space-evenly;
+   align-items: center;
+   height: 750px;
+   flex-direction: column;
+   color: var(--w);
+   background-color: var(--bb);
+   font-family: var(--font);
+  font-weight: 600;
+}
+.s1f h1{
+    color: var(--y);
+}
+.s1f img{
+    height: 8rem;
+    width: 8rem;
+
+}
+.secside{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* .about  */
+
+.about{
+    background-color: var(--y);
+    padding: 25px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: var(--font);
+}
+.para{
+    height: 580px;
+    background-color: var(--bb);
+    font-family: var(--font);
+    color: #fff;
+}
+.para h2{
+    padding: 30px;
+    font-style: italic;
+}
+.para p{
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 30px 120px;
+    color: #ccc;
+}
+
+/* gallery */
+
+.gal{
+    background-color: var(--b);
+    padding:25px ;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: var(--font);
+}
+#main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    padding: 40px;
+}
+.main2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.sp{
+    padding-bottom: 30px;
+}
+
+
+/* footer  */
+
+#footer{
+    background-color: var(--y);
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--font);
+}
+.add{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 30px;
+    height: 250px;
+}
+.add h4{
+   color: #555;
+   font-weight: 400;
+}
+.add span{
+   color: #fff;
+   font-weight: 400;
+}
+.add h1{
+    font-weight: 600;
+}
+#signup h4{
+   color: #555;
+   font-weight: 400;
+}
+#signup h1{
+   font-weight: 600;
+}
+#signup{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-direction: column;
+    padding: 30px;
+    height: 250px; 
+}
+
+input[type="email"]{
+    height: 2.2rem;
+    width: 15rem;
+    outline: none;
+    border: none;
+}
+
+input[type="submit"]{
+    background-color: var(--bb);
+    height: 2.2rem;
+    width: 5rem;
+    outline: none;
+    border: none;
+    font-family: var(--font);
+    color: #fff;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+input[type="submit"]:hover{
+    background-color: blueviolet;
+    color: var(--w);
+    font-weight: 700;
+}
+
+/* icons  */
+
+i{
+    color: #111;
+    font-weight: 700;
+}
+

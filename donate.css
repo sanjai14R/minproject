@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;1,700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font: 'Montserrat', sans-serif;
+    --y:#F2D921;
+    --w : #FFFFFF;
+    --b : #15B0E8;
+    --bb: #2C2626;
+}
+
+html,body{
+    scroll-behavior: smooth;
+}
+
+nav{
+
+    z-index: 9999;
+    width: 99vw;
+    display: flex;
+    opacity: .85;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color:#111;
+    color: #FFFFFF;
+    font-family: var(--font);
+    font-weight: 400;
+}
+nav span{
+    color: var(--y);
+}
+li{
+    list-style: none;
+    display: inline-block;
+    padding:10px 30px;
+    font-weight: 600;
+}
+body{
+    overflow-x: hidden;
+    font-family: var(--font);
+    background-color: var(--b);
+}
+li a{
+    text-decoration: none;
+    color: var(--w);
+}
+li a:hover{
+    color: #F2D921;
+}
+
+#d{
+    border: 2px solid var(--y);
+    padding:10px 30px;
+    transition: all .2s linear;
+}
+#d:hover,#d a:hover{
+    background-color: #F2D921;
+    color: #111;
+    font-weight: 700;
+}
+h1{
+    font-size: 700;
+    font-style: italic;
+    padding: 40px;
+}
+.first{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    height: 500px;
+    margin: 40px;
+    padding: 30px;
+}
+.btn{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+p{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.formm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+    margin: 10px;
+}
+
+input[type="email"]{
+    background-color: #111;
+    color: #FFFFFF;
+    height: 2rem;
+    width: 15rem;
+    outline: none;
+    border: none;
+
+}
+input[type="text"]{
+    background-color: #111;
+    color: #FFF;
+    height: 2rem;
+    width: 15rem;
+    outline: none;
+    border: none;
+    margin-bottom: 10px;
+}
+input[type="submit"]{
+    margin-top: 20px;
+    background-color: var(--y);
+    color: var(--bb);
+    font-weight: 700;
+    height: 2rem;
+    width: 15rem;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    transform: scale(1);
+    transition: all .2s linear;
+}
+input[type="submit"]:hover{
+    transform: scale(1.075);
+}
+input::placeholder{
+    color: #ccc;
+}
